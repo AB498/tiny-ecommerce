@@ -1,0 +1,17 @@
+{
+  "functions": {
+    "api/index.ts": {
+      "includeFiles": "{backend}/**"
+    }
+  },
+  "routes": [
+    {
+      "src": "/assets/(.*)",
+      "dest": "/api"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/api"
+    }
+  ]
+}
